@@ -1,0 +1,140 @@
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../../../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf');
+
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../../assets/fonts/LuciusSansOne/JuliusSansOne-Regular.ttf');
+}
+
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  margin: 2.3em;
+  background-color: #f5f5f5;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.392);
+  border-radius: 25px;
+  display:flex ;
+  flex-wrap: wrap;
+  padding: 0;
+
+}
+
+.title{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 75%;
+  margin-bottom: 2em;
+}
+
+span{
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content-wrapper1{
+  padding: 3em 0em 3em 3em;
+  width: 50%;
+h1{
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  img{
+    width: 5rem;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.content-wrapper2{
+  border-radius: 100px 25px 25px 100px;
+  padding: 3em 3em 3em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.429);
+  img{
+    width: 28.5rem;
+  }
+  h1{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+
+  }
+  align-items: center;
+}
+
+h3{
+  font-size: 2rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.form{
+  form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  input{
+    border-radius: 20px;
+    padding: 1em;
+    border: none;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.429);
+    margin: .7em;
+    width: 70%;
+  }
+  input:focus{
+    outline: none;
+  }
+}
+
+button{
+  cursor: pointer;
+  margin: 1em;
+  padding: .7em;
+  width: 30%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.451);
+}
+
+button.lgn-btn{
+  background-color: #C53F3F;
+  color: white;
+}
+
+button.lgn-btn:hover{
+      background-color: #9A4A4D;
+
+}
+
+button.sgn-btn{
+  background-color: #9A4A4D;
+  color: white;
+}
+
+button.sgn-btn:hover{
+  background-color: #C53F3F;
+}
+
+
+

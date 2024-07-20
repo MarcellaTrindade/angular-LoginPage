@@ -1,0 +1,43 @@
+<main class="container" id="container">
+  <section class="content-wrapper1">
+    <section class="content sgn-in" [hidden]="showFormu" [ngStyle]="cStyle2">
+      <section class="title">
+        <img src="../../../assets/imgs/healthy food-pana.svg" alt="">
+        <h1>PURE PLATE</h1>
+    </section>
+      <span>Your go-to app for easy, healthy meal planning and nutrition tips.</span>
+      <section class="form " id="form" >
+        <h3>Login</h3>
+
+        <form [formGroup]="loginForm" >
+          <input type="email" formControlName="email" inputName="email" id="password" placeholder="E-mail">
+          <input type="password" formControlName="password" inputName="password" id="password" placeholder="Password">
+          <a href="#">Forget Your Password?</a>
+          <button class="lgn-btn" id="login" type="submit" (click)="submit()">Sign In</button>
+        </form>
+      </section>
+    </section>
+      <section class="content sgn-up" [hidden]="showFormu2">
+        <section class="title">
+          <img src="../../../assets/imgs/healthy food-pana.svg" alt="">
+          <h1>Pure Plate</h1>
+        </section>
+      <span>Your go-to app for easy, healthy meal planning and nutrition tips.</span>
+      <section class="form" id="form" >
+        <h3>Sign Up</h3>
+        <form [formGroup]="signupForm">
+          <input type="text" name="name" id="name" placeholder="Name">
+          <input type="email" name="email" id="password" placeholder="E-mail">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <button class="lgn-btn" id="login" type="submit" (click)="signup()">Sign Up</button>
+        </form>
+      </section>
+    </section>
+  </section>
+  <section class="content-wrapper2" [ngStyle]="cStyle">
+    <h1>GOOD FOOD, GOOD MOOD!</h1>
+    <img src="../../../assets/imgs/healthy food vs fast food-amico.svg" alt="">
+    <button class="sgn-btn" id="register" (click)="showForm(); showBtn(); changeStyle2();" [hidden]="showBtn1">Sign Up</button>
+    <button class="sgn-btn" id="login" (click)="showForm(); showBtn(); changeStyle()" [hidden]="showBtn2">Sign In</button>
+  </section>
+</main>
