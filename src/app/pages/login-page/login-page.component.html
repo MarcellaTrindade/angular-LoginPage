@@ -6,14 +6,13 @@
         <h1>PURE PLATE</h1>
     </section>
       <span>Your go-to app for easy, healthy meal planning and nutrition tips.</span>
-      <section class="form " id="form" >
+      <section class="form " id="form">
         <h3>Login</h3>
-
-        <form [formGroup]="loginForm" >
+        <form>
           <input type="email" formControlName="email" inputName="email" id="password" placeholder="E-mail">
           <input type="password" formControlName="password" inputName="password" id="password" placeholder="Password">
           <a href="#">Forget Your Password?</a>
-          <button class="lgn-btn" id="login" type="submit" (click)="submit()">Sign In</button>
+          <button class="lgn-btn" id="login" type="submit">Sign In</button>
         </form>
       </section>
     </section>
@@ -25,11 +24,11 @@
       <span>Your go-to app for easy, healthy meal planning and nutrition tips.</span>
       <section class="form" id="form" >
         <h3>Sign Up</h3>
-        <form [formGroup]="signupForm">
+        <form>
           <input type="text" name="name" id="name" placeholder="Name">
           <input type="email" name="email" id="password" placeholder="E-mail">
           <input type="password" name="password" id="password" placeholder="Password">
-          <button class="lgn-btn" id="login" type="submit" (click)="signup()">Sign Up</button>
+          <button class="lgn-btn" id="login" type="submit">Sign Up</button>
         </form>
       </section>
     </section>
